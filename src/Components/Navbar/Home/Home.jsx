@@ -1,5 +1,6 @@
 import imghero from "../imgproject/Nike Air Force 1 - Julio Redondo.png"
 import Collection from "./collection"
+import New from "./new"
 export default function Home(){
     return(
         <>
@@ -26,6 +27,7 @@ export default function Home(){
             </div>
         </div>
         <Collection/>
+        <New/>
         </>
     )
 }

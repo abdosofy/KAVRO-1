@@ -1,4 +1,6 @@
 import {Link} from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar(){
     onscroll = function(){
         let nav = document.getElementById("nav")
@@ -16,9 +18,12 @@ export default function Navbar(){
                 </div>
                 <ul>
                     <li><Link to="/">HOME</Link></li>
-                    <li><Link to="/">PRODUCTS</Link></li>
-                    <li><Link to="/">CONTACT</Link></li>
+                    <li><Link to="/products">PRODUCTS</Link></li>
+                    <li><Link to="/contact">CONTACT</Link></li>
                 </ul>
+                <div className="logo-nav">
+                    <Link to="/Cart"><FontAwesomeIcon className="icon" icon={faCartShopping} /></Link>
+                </div>
             </div>
         </div>
     )
