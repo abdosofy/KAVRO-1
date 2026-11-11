@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom"; 
 import { products } from "../../data/products";
+import { useState } from "react";
 
 export default function ProductDetails(){
     function AddToCart() {

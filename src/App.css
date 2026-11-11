@@ -912,7 +912,12 @@ PRODUCTSDEATAILES.CSS
 /* ///////////////
 SHOP.CSS
 /////////////// */
-
+.logo-nav span{
+  position: fixed;
+  bottom: 61px;
+  right: 37px;
+  color: white;
+}
 .logo-nav .icon{
   background-color: #333;
   font-size: 20px;

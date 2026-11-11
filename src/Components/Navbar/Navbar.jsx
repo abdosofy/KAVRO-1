@@ -22,7 +22,7 @@ export default function Navbar(){
                     <li><Link to="/contact">CONTACT</Link></li>
                 </ul>
                 <div className="logo-nav">
-                    <Link to="/Cart"><FontAwesomeIcon className="icon" icon={faCartShopping} /></Link>
+                    <Link id="icon" to="/Cart"><FontAwesomeIcon className="icon" icon={faCartShopping} /></Link>
                 </div>
             </div>
         </div>
