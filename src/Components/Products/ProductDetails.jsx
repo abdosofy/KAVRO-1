@@ -9,13 +9,21 @@ export default function ProductDetails(){
     cart.push(product);
 
     localStorage.setItem("cart", JSON.stringify(cart));
+    let div = document.getElementById("done")
+    div.style.display = "flex"
+    let btn = document.getElementById("btn")
+    btn.classList.add("pointer")
 }
-
     const { productId } = useParams();
     const product = products.find(
     (item) => String(item.id) === productId
     );
+
     return(
+        <>
+        <div id="done" className="done-detailes">
+            <h1>IN CART</h1>
+        </div>
         <div className="section-detailes">
             <div className="container-dettailes">
                 <img src={product.Image} alt="" />
@@ -45,11 +53,12 @@ export default function ProductDetails(){
                         </ul>
                     </div>
                     <div className="btn">
-                    <button onClick={AddToCart}>ADD TO CART</button>
+                    <button id="btn" onClick={AddToCart}>ADD TO CART</button>
                     <Link to="/products">ALL PRODUCTS</Link>
                     </div>
                 </div>
             </div>
         </div>
+        </>
     )
 }

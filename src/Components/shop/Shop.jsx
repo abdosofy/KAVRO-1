@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 export default function Shop() {
     const [cart, setCart] = useState([]);
     function DeletCart(id){
@@ -11,6 +10,7 @@ export default function Shop() {
         setCart(data);
     }, []);
     return (
+        <>
         <div className="section-shop">
             {
                 cart.map((product,id) => (
@@ -18,10 +18,12 @@ export default function Shop() {
                         <img src={product.Image} alt="" />
                         <h2>{product.Name}</h2>
                         <h3>{product.Price}</h3>
-                        <button onClick={()=>DeletCart(id)}>REMOVE</button>
+                        <button>REMOVE</button>
                     </div>
                 ))
             }
         </div>
+        </>
     );
+
 }
