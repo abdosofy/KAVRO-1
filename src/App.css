@@ -938,8 +938,8 @@ SHOP.CSS
   margin-bottom: 20px;
 }
 .section-shop img{
-  width: 300px;
-  height: 450px;
+  width: 200px;
+  height: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1301,6 +1301,7 @@ SHOP.CSS
   .section-shop {
     padding: 20px;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
   .section-shop img {
@@ -1478,5 +1479,120 @@ SHOP.CSS
     bottom: 20px;
     font-size: 18px;
     padding: 12px 18px;
+  }
+}
+#deletedata{
+  width: 80%;
+  margin-top: 20px;
+  padding: 7px 0;
+  font-family: "Bebas Neue", sans-serif;;
+  display: none;
+  margin-left: 9%;
+}
+
+.done-buy{
+  display: block;
+  width: 80%;
+  height: 80vh;
+  background-color: #55555556;
+  text-align: center;
+  margin-left: 7%;
+  display: none;
+  transition: 0.5s;
+}
+.box-buy{
+  position: sticky;
+  left: -50%;
+  top: 50%;
+  z-index: 99;
+}
+.done-detailes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  transition: 0.5s;
+}
+.done-detailes h1{
+  color: rgb(49, 196, 49);
+  text-shadow: 2px 2px 50px rgb(49, 196, 49);
+  transition: 0.5s;
+}
+
+.pointer{
+  pointer-events: none;
+}
+.section-shop {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.section-shop > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.section-shop img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.section-shop h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.section-shop h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.section-shop button {
+  padding: 10px;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.section-shop button:first-of-type {
+  margin-top: auto;
+  background: #fff;
+  color: #c62828;
+  border: 1px solid #c62828;
+}
+
+.section-shop button:first-of-type:hover {
+  background: #c62828;
+  color: #fff;
+}
+
+.section-shop button:last-of-type {
+  background: #111;
+  color: #fff;
+  border: 1px solid #111;
+}
+
+.section-shop button:last-of-type:hover {
+  background: #333;
+}
+
+@media (max-width: 600px) {
+  .section-shop {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
   }
 }
