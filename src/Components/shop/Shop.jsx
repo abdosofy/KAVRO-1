@@ -18,7 +18,8 @@ export default function Shop() {
                         <img src={product.Image} alt="" />
                         <h2>{product.Name}</h2>
                         <h3>{product.Price}</h3>
-                        <button>REMOVE</button>
+                        <button onClick={()=>DeletCart(id)}>REMOVE</button>
+                        <button>Order Confirmation</button>
                     </div>
                 ))
             }

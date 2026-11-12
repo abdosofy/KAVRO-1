@@ -7,10 +7,12 @@ import Products from "./Components/Products/Products";
 import ProductDetails from "./Components/Products/ProductDetails";
 import Contact from "./Components/Contact/Contact";
 import Shop from "./Components/shop/Shop";
+import ChatBot from "./Components/ChatBot/ChatBot";
 export default function App(){
   return(
     <>
     <Navbar/>
+    <ChatBot/>
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/Products" element={<Products/>}/>
